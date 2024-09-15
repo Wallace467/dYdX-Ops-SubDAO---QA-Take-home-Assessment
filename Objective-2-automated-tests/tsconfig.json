@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",                   // Set the target JavaScript version
+      "module": "ESNext",                   // Use ESNext modules
+      "moduleResolution": "Node",           // Resolve modules as Node.js does
+      "strict": true,                       // Enable strict type-checking options
+      "esModuleInterop": true,              // Handle CommonJS/ES module interoperability
+      "forceConsistentCasingInFileNames": true,  // Enforce consistent file name casing
+      "skipLibCheck": true,                 // Skip type checking of declaration files
+      "types": ["node"],                    // Include Node.js types
+      "lib": ["esnext"],                    // Use ESNext library definitions
+    },
+    "exclude": ["node_modules"],            // Exclude node_modules from compilation
+    "include": ["**/*.ts"]                  // Include all TypeScript files in the project
+}

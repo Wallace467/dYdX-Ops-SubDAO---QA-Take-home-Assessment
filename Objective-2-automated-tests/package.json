@@ -1,0 +1,21 @@
+{
+  "name": "dydx-ops-subdao---qa-take-home-assessment",
+  "version": "1.0.0",
+  "description": "dYdX Ops SubDAO - QA Take-home Assessment",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^22.5.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "playwright": "^1.47.1"
+  }
+}
