@@ -12,7 +12,6 @@ if (!ETH_USD_MARKET) {
 const very_high_price = "999999999";
 const very_low_price = "1";
 
-const sides = [Side.Buy, Side.Sell];
 // #endregion
 
 // #region Form Validation and Error Handling Tests
@@ -27,7 +26,7 @@ test.describe("Stop Limit  Displays Invalid Leverage error", () => {
     await tradeTicket.navigateToMarketSelectStopLimit(ETH_USD_MARKET);
   });
 
-  sides.forEach((side) => {
+  Object.values(Side).forEach((side) => {
     test(`Stop limit displays invalid leverage ${side} error`, async () => {
       const value = side === Side.Sell ? very_low_price : very_high_price;
 
